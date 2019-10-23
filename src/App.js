@@ -57,10 +57,10 @@ function UserList({ users }) {
   return (
     <div style={{ background: '#eee', padding: 5, fontSize: '18px' }}>
       <p style={{marginBottom: 20 }}>Hello from the child component.</p>
-      <p>Fetched users <b>{users.length}</b> from API:</p>
+      <p>Fetched <b>{users.length}</b> users from API:</p>
       <ul>
       {users.map((user) => (
-        <li>
+        <li key={user.email}>
           <div style={{display: 'flex', alignItems: "center", height: 40 }}>
             <p style={{display: 'inline-block' }}>{user.name.first} {user.name.last}</p>
             <img style={{ width: 30, marginLeft: 10 }} src={user.picture.thumbnail} alt="User profile" />

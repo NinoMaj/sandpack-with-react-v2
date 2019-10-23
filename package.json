@@ -1,6 +1,6 @@
 {
   "name": "sandpack-with-react-v2",
-  "description": "Testing how sandpack perform",
+  "description": "Testing sandpack performance",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
